@@ -1,15 +1,34 @@
+$primary-color: #f00;
 
 html {
   font-size: 20px; /* do px size on html but use rems otherwise */
+}
+
+a {
+  color: $primary-color;
+}
+
+body {
+  font-family: 'Crimson Text', Georgia, serif;
 }
 
 header {
   font-family: Oswald, Arial, sans-serif;
   text-transform: uppercase;
 }
+.hero {
+  background: url('images/pexels-photo-312105.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
 
-.site-body {
-  font-family: 'Crimson Text', Georgia, serif;
+  color: #fff;
+  min-height: 420px;
+  text-shadow: 0 0 20px rgba(0,0,0,0.75);
+  h1 {
+    font-size: 5rem;
+  }
+  margin-bottom: 2rem;
 }
 
 .pull-quote em {
@@ -17,5 +36,16 @@ header {
   font-size: 1.25rem;
   @media (min-width: 1024px) {
     font-size: 1.75rem;
+  }
+}
+
+.infographic-area {
+  .large-amount, .small-amount {
+    font-family: Oswald, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    span {
+      color: $primary-color;
+    }
   }
 }
