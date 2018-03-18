@@ -1,4 +1,4 @@
-$primary-color: #f00;
+$primary-color: #cd3a18;
 $secondary-color: #24424C;
 
 html {
@@ -41,16 +41,28 @@ header {
   text-shadow: 0 0 20px rgba(0,0,0,0.75);
   h1 {
     font-size: 5rem;
+    color: white;
   }
   margin-bottom: 2rem;
 }
 
-.pull-quote em {
-  font-style: italic;
-  font-size: 1.25rem;
-  @media (min-width: 1024px) {
-    font-size: 1.75rem;
+.pull-quote {
+  em {
+    font-style: italic;
+    font-size: 1.25rem;
+    @media (min-width: 1024px) {
+      font-size: 1.75rem;
+    }
   }
+}
+
+.intro-paragraph {
+
+    border-left: 3px solid $primary-color;
+    padding-left: 20px;
+    p:last-child {
+      margin-bottom: 0;
+    }
 }
 
 .infographic-area {
@@ -66,4 +78,23 @@ header {
 
 .text-large {
   font-size: 2rem;
+}
+
+h1 {
+  font-family: Oswald, Arial, sans-serif;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+/* customize petition embed */
+#action_info_inner {
+  display: none;
+}
+
+#can_main_col, #can_sidebar {
+  @media (max-width: 768px) {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+  }
 }
