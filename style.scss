@@ -66,13 +66,15 @@ header {
 }
 
 .infographic-area {
+  background: url('images/pexels-photo-414936.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  color: #fff;
+  padding: 3rem;
+  margin: 1rem 0;
   .large-amount, .small-amount {
     font-family: Oswald, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 2.5rem;
-    span {
-      color: $primary-color;
-    }
   }
 }
 
